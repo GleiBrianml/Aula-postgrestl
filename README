@@ -1,4 +1,4 @@
-# CRUD COM POSTGRESQL + PYTHON
+# # CRUD COM POSTGRESQL + PYTHON
 
 Este projeto é um exemplo prático de CRUD usando:
 - Banco de dados  **PostgreSQL**
@@ -53,4 +53,4 @@ python -m streamlit run app.py
 ### Autor
 Projeto desenvolvido em aula para treinar python + postgresql
 
-Autor: Gleidson Brian Muniz Lira
+Professor: Gabriel Brito de sousa
