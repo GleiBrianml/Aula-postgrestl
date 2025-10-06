@@ -16,8 +16,10 @@ def conectar():
     try:
         conexao = pg.connect(**params)
         cursor = conexao.cursor()
+        print("Conexão com sucesso")
         return conexao, cursor
     except Exception as erro:
         print(f"Erro de conexão {erro}")
         return None, None
     
+conectar()
