@@ -36,3 +36,15 @@ elif menu == "Atualizar":
             st.success(f"Idade do aluno atualizada com sucesso.")
     else:
         st.info("Nenhum aluno disponivel para atualizar")
+
+else:
+    st.subheader("❌Deletar aluno")
+    alunos = listar_alunos()
+    if alunos:
+        id_aluno = st.selectbox("Escolha o id do aluno para " \
+        "Deletar", [linha[0] for linha in alunos])
+        if st.button("Deletar aluno"): 
+            st.success("Aluno  deletado com sucesso")
+            deletar_aluno(id_aluno)
+    else:
+        st.info("Nenhum aluno disponivel para excluir")
